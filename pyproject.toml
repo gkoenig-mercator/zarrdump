@@ -1,0 +1,14 @@
+[project]
+name = "zarrdump"
+version = "0.1.0"
+description = "Command-line tool to inspect Zarr file metadata like ncdump"
+authors = [{ name="Guillaume Koenig", email="gkoenig@mercator-ocean.fr" }]
+dependencies = ["xarray", "zarr"]
+requires-python = ">=3.7"
+
+[project.scripts]
+zarrdump = "zarrdump.__main__:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
